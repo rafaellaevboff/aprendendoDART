@@ -1,0 +1,21 @@
+Dart é fortemente tipado e tem tipagem Dinâmica(tem capacidade de entender qual é o tipo da variável durante a execução e antes mesmo de executar verifica qual o tipo)
+
+Utilizar VAR, DYNAMIC, INT, DOUBLE, STRING...
+
+var não deixa uma variável com valor definido, ao ser inserido seu valor daí sim ele vai definir o valor.
+
+Usar var nem sempre é o essencial. Exemplo abaixo:
+void main() {
+    var idade = 25;
+    idade = 25.5;
+    print(idade);
+}
+PS: esse código não vai funcionar, pois o var definiu 25 como uma variável int e dps foi atribuido um valor double, mas ela já estava definida como int.
+
+Usando o Dynamic o erro não irá ocorrer: (programa pode ficar mais lento se usar muitos)
+
+[...]
+dynamic idade = 25;
+[...]
+
+Dynamic "diz" que tanto o valor quanto o tipo pode mudar no decorrer da execução do código. O computador vai ter um custo de memória maior ao usar ele, se usar muitossss o programa vai ser mais lento.
