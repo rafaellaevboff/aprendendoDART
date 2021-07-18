@@ -1,25 +1,25 @@
 void main() {
-  ContaCorrente conta = ContaCorrente();
-  conta.titular = 'Rafaella';
-  conta.agencia = 123;
-  conta.conta = 1234;
+  ContaCorrente contaDaAmanda = ContaCorrente();
+  contaDaAmanda.titular = 'Amanda';
+  contaDaAmanda.agencia = 123;
+  contaDaAmanda.conta = 1;
 
-  conta.saldo = 150.0;
-  print(conta.saldo);
+  print('Titular: ${contaDaAmanda.titular}');
+  print('Agência: ${contaDaAmanda.agencia}');
+  print('Saldo: ${contaDaAmanda.saldo}');
 
-  conta.saldo += 50.0; //adicionei mais 50 reais no saldo
-  print(conta.saldo);
+  ContaCorrente contaDoTiago = ContaCorrente();
+  contaDoTiago.titular = 'Tiago';
+  contaDoTiago.conta = 2;
 
-  //inprimir dados da conta:
-  // print('Titular: ${conta.titular}');
-  // print('Agência: ${conta.agencia}');
-  // print('Conta: ${conta.conta}');
-  // print('Saldo: ${conta.saldo}');
+  print('Titular: ${contaDoTiago.titular}');
+  print('Agência: ${contaDoTiago.agencia}');
+  print('Saldo: ${contaDoTiago.saldo}');
 }
 
 class ContaCorrente {
   late String titular;
-  late int agencia;
+  int agencia = 145; // posso ter um valor padrão e mudar ele no objeto, exemplo disso é a agência da Amanda que foi inicializada como 123, a de Tiago não foi específica e pegou daq o valor cadastrado
   late int conta;
-  late double saldo;
+  double saldo = 20.0; //posso inicializar com um valor padrão que irá valer para todos os objetos
 }
