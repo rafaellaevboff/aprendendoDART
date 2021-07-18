@@ -1,2 +1,2 @@
-A sample command-line application with an entrypoint in `bin/`, library code
-in `lib/`, and example unit test in `test/`.
+## Um "banco", com Conta Corrente
+ -  Início de uso de class e objetos
