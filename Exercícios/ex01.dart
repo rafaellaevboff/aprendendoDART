@@ -8,7 +8,7 @@
 import 'dart:io';
 
 void main() {
-  const qtd = 3;
+  const qtd = 10;
   var menosQue18anos = 0;
   double mediaIdades = 0;
   int acumuladorIdades = 0;
